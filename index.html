@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow with Animated Text and Transparent Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Transparent Navbar -->
+<nav class="navbar absolute flex justify-between items-center py-1 px-2">
+    <div class="navbar-logo w-2/12">
+        <img src="./images/1000-hills-logo.png" alt="Logo" width="100px" height="100px"> <!-- Replace with your logo -->
+    </div>
+    <ul class="flex lg:space-x-4 font-thin w-8/12 list-1 uppercase gap-2  text-sm ">
+        <li class="list-2"><a href="#">Home</a></li>
+        <li class="list-2"><a href="#">About</a></li>
+        <li class="list-2"><a href="#">Community</a></li>
+        <li class="list-2"><a href="#">Results</a></li>
+    </ul>
+    <div class="flex w-2/12 list-1">
+        <ul class="flex lg:gap-6 gap-2 justify-center items-center text-md ">
+            <li><a href="https://www.facebook.com/1000hillsrugby/"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/1000hillsrugby/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=" https://x.com/1000HillsRugby?t=S0PTUa88AFrp6SJs5meJ6A&s=08 "><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/@1000HillsRugby"><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Slideshow Container -->
+<div class="slideshow-container relative max-w-full overflow-hidden">
+    <!-- Slide 1 -->
+    <div class="mySlides absolute">
+        <img class="object-cover" src="./images/image2.jpg" alt="Men's Team">
+        <div class="text-container absolute text-center ">
+            <p class=" lg:text-md my-4 font-thin text-2xl whitespace-nowrap ">The Next League Champions</p>
+            <h1 class="lg:text-9xl text-7xl font-black mb-0.80">RUGBY</h1>
+        </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="mySlides absolute">
+        <img class="object-cover" src="./images/image-2.jpg" alt="Women's Team">
+        <div class="text-container absolute text-center">
+            <p class="lg:text-md my-4 text-2xl whitespace-nowrap font-thin ">The Next League Champions</p>
+            <h1 class="lg:text-9xl text-7xl font-black mb-0.80">RUGBY</h1>
+        </div>
+    </div>
+</div>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let slides = document.querySelectorAll('.mySlides');
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = 'none';
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = 'block';
+        setTimeout(showSlides, 4000); // Change slide every 4 seconds
+    }
+</script>
+<footer class="lg:w-full flex lg:flex-row flex-col">
+    <div class="footer-logo lg:w-2/12 lg:mx-8 lg:-mt-2 w-full flex lg:justify-start justify-center items-center">
+        <img src="./images/1000-hills-logo.png" alt="Logo" width="150px" height="150px">
+    </div>
+    <div class="lg:w-3/12 w-full flex flex-col lg:mx-4 footer-info">
+        <p class="text-2xl font-bold">OUR COMPANY</p>
+        <p class="mt-9 text-center-1 w-10/12 text-lg font-thin">Lorem ipsum dolor sit amet consecteturs adipisicing elit. Beatae saepe sapiente dicta aliquam ani</p>
+    </div>
+    <div class="lg:w-3/12 w-full flex flex-col footer-info mb-9">
+        <p class="flex text-2xl font-bold">WHAT WE DO</p>
+        <ul class="flex flex-col mt-9 text-center-1 gap-3 text-lg font-thin">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Pricing Table</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Team</a></li>
+        </ul>
+    </div>
+    <div class="lg:w-2/12 w-full flex flex-col items-center">
+        <p class="flex text-2xl font-bold">CONNECT</p>
+        <ul class="flex lg:flex-row flex-col lg:gap-6 gap-3 mt-9 text-lg font-thin">
+            <li><a href="https://www.facebook.com/1000hillsrugby/"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/1000hillsrugby/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=" https://x.com/1000HillsRugby?t=S0PTUa88AFrp6SJs5meJ6A&s=08 "><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/@1000HillsRugby"><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
