@@ -5,30 +5,33 @@ body{
 .navbar, .text-container{
     color: #02120b;
 }
+.navbar{
+
+}
 .color-yellow{
     color: #dcbb26;
 }
 .btn-1{
     background-color: #dcbb26;
 }
-/* Slideshow Container */
-.slideshow-container {
-    height: 100vh;
-}
 .svg-1{
     fill: white;
 }
-/* Slides */
+/* Slideshow Container
+.slideshow-container {
+    height: 100vh;
+}
+/* Slides
 .mySlides {
     display: none;
     width: 100%;
-    height: 100%;
-}
-/* Slide Images */
+    height: 85%;
+} */
+/* 
 .mySlides img {
     width: 100%;
     height: 100%;
-}
+} */ 
 
 /* Transparent Navbar */
 .navbar {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slideshow with Animated Text and Transparent Navbar</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -12,9 +12,9 @@
 <body>
 
 <!-- Transparent Navbar -->
-<nav class="navbar absolute flex justify-between items-center py-1 px-2">
-    <div class="navbar-logo w-2/12">
-        <img src="./images/1000-hills-logo.png" alt="Logo" width="100px" height="100px"> <!-- Replace with your logo -->
+<nav class="navbar bg-[#fff] h-[10vh] absolute flex justify-between items-center py-1 px-2 text-[#000]">
+    <div class="navbar-logo w-2/12 ">
+        <img class="w-[50%] mt-10" src="./images/1000-hills-logo.png" alt="Logo" > <!-- Replace with your logo -->
     </div>
     <ul class="flex lg:space-x-4 font-thin w-8/12 list-1 uppercase gap-2  text-sm ">
         <li class="list-2"><a href="#">Home</a></li>
@@ -32,19 +32,19 @@
     </div>
 </nav>
 
-<!-- Slideshow Container -->
-<div class="slideshow-container relative max-w-full overflow-hidden">
+<main>
+    <!-- Slideshow Container -->
+<div class="slideshow-container h-[100vh] relative max-w-full overflow-hidden">
     <!-- Slide 1 -->
-    <div class="mySlides mySlides-1 absolute">
+    <!-- <div class="mySlides mySlides-1 absolute">
         <img class="object-cover" src="./images/rugby-3.jpeg" alt="Men's Team">
-        <div class="text-container absolute text-center ">
+        <div class="text-container absolute">
             <h1 class="lg:text-9xl text-7xl font-black mb-0.80">RUGBY</h1>
             <p class=" lg:text-md my-4 font-thin text-2xl whitespace-nowrap ">The Next League Champions</p>
         </div>
-    </div>
+    </div> -->
 </div>
 
-<main>
     <div class="my-16 flex lg:flex-row flex-col">
         <div class="image-2-div lg:w-6/12 m-auto w-11/12 lg:ml-8">
             <img class="image-div" src="./images/image-2.jpg" alt="">
