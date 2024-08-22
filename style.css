@@ -48,7 +48,7 @@ body{
     transition: color 0.3s;
 }
 
-.navbar a:hover {
+.navbar a:hover{
     color: #006838;
     font-size: larger;
 }
@@ -66,6 +66,28 @@ body{
 
 .text-container p {
     animation: moveInRight 2s forwards;
+}
+
+.section-3-container-content-1 {
+    background-image: url(./images/download.jfif);
+    height: 500px;
+    
+}
+
+.section-3-container-content-2{
+    background-image: url(./images/42d17dca-c32a-493d-a269-bd5efdb4d739.jfif);
+    height: 500px;
+    
+}
+
+.section-3-container-content-3{
+    background-image: url(./images/45f6edcd-5032-417e-b61a-d6a3bc556c35.jfif);
+    height: 500px;
+}
+
+.section-3-container-content-4{
+    background-image: url(./images/🇳🇿🇳🇿.jfif);
+    height: 500px;
 }
 
 @keyframes fadeInText {

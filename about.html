@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>About Us</title>
+</head>
+<body>
+    <nav class="navbar bg-[#fff] h-[10vh] absolute flex justify-between items-center py-1 px-2 text-[#000]">
+        <div class="navbar-logo w-2/12 ">
+            <img class="w-[35%] mt-2" src="./images/1000-hills-logo.png" alt="Logo"> <!-- Replace with your logo -->
+        </div>
+        <ul class="flex lg:space-x-4 font-thin w-8/12 list-1 uppercase gap-2  text-sm ">
+            <li class="list-2"><a href="#">Home</a></li>
+            <li class="list-2"><a href="#">About</a></li>
+            <li class="list-2"><a href="#">Community</a></li>
+            <li class="list-2"><a href="#">Results</a></li>
+        </ul>
+        <div class="flex w-2/12 list-1">
+            <ul class="flex lg:gap-6 gap-2 justify-center items-center text-md ">
+                <li><a href="https://www.facebook.com/1000hillsrugby/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/1000hillsrugby/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=" https://x.com/1000HillsRugby?t=S0PTUa88AFrp6SJs5meJ6A&s=08 "><i
+                            class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/@1000HillsRugby"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="slideshow-container h-[100vh]  max-w-full overflow-hidden grid grid-cols-12 items-center ">
+            <!-- Slide 1 -->
+         
+                <div class=" text-container-2 border-l-[10px] flex flex-col col-span-4 border-white-500 pl-2  mx-auto font-[800] text-white">
+                    <p class="text-[25px] text-[orange]">About Us</p>
+                    <h1 class="lg:text-[50px] lg:w-[100%]">One team <br> One spirit</h1>
+                </div>
+                <div class="col-span-8 pt-[8%]">
+                  <img class="w-[100%]" src="./images/players.png" alt="">
+                </div>
+        </section>
+
+        <section class="bg-white justify-center items-center pb-9">
+            <div class="flex-col flex justify-center items-center w-full pt-10">
+                <div class="about-us-logo lg:w-8/12 lg:mx-8 lg:-mt-2 w-full flex justify-center items-center">
+                   <img class="w-[20%] mt-2" src="./images/1000-hills-logo.png" alt="Logo">
+                </div>
+                <p class="text-center mx-[20%] font-mono text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repellat dolores, veniam adipisci est iure, dolor eaque in illo, </p>
+                <div class="pt-4">
+                    <video class="rounded-md lg:w-[800] h-auto w-[400]" controls>
+                        <source src="movie.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us-section-3 bg-[#145A32]">
+            <div class="section-3-container gap-2 flex lg:flex-row flex-col justify-center items-center w-[90%] w-full py-10 px-5 rounded-md ">
+                <div class="section-3-container-content-1 lg:w-[40%] w-full bg-cover rounded-md flex items-end">
+                    <p class=" font-bold">History</p>
+                    <h2 class="">Dump Tackle since <br> 2014</h2>
+                </div>
+                <div class="section-3-container-content-2 lg:w-[40%] w-full bg-cover rounded-md"></div>
+                <div class="section-3-container-content-3 lg:w-[40%] w-full bg-cover rounded-md"></div>
+                <div class="section-3-container-content-4 lg:w-[40%] w-full bg-cover rounded-md"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="lg:w-full flex lg:flex-row flex-col text-white bg-black">
+        <div class="footer-logo lg:w-2/12 lg:mx-8 lg:-mt-2 w-full flex lg:justify-start justify-center items-center">
+            <img src="./images/1000-hills-logo.png" alt="Logo" width="150px" height="150px">
+        </div>
+        <div class="lg:w-3/12 w-full flex flex-col lg:mx-4 footer-info">
+            <p class="text-2xl font-bold">OUR COMPANY</p>
+            <p class="mt-9 text-center-1 w-10/12 text-lg font-thin">Lorem ipsum dolor sit amet consecteturs adipisicing
+                elit. Beatae saepe sapiente dicta aliquam ani</p>
+        </div>
+        <div class="lg:w-3/12 w-full flex flex-col footer-info mb-9">
+            <p class="flex text-2xl font-bold">WHAT WE DO</p>
+            <ul class="flex flex-col mt-9 text-center-1 gap-3 text-lg font-thin">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Pricing Table</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+        </div>
+        <div class="lg:w-2/12 w-full flex flex-col items-center">
+            <p class="flex text-2xl font-bold">CONNECT</p>
+            <ul class="flex lg:flex-row flex-col lg:gap-6 gap-3 mt-9 text-lg font-thin">
+                <li><a href="https://www.facebook.com/1000hillsrugby/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/1000hillsrugby/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=" https://x.com/1000HillsRugby?t=S0PTUa88AFrp6SJs5meJ6A&s=08 "><i
+                            class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/@1000HillsRugby"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
