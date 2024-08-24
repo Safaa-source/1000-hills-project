@@ -12,42 +12,56 @@
 </head>
 
 <body>
-
     <!-- Transparent Navbar -->
-    <nav class="navbar bg-[#fff] h-[10vh] absolute flex justify-between items-center py-1 px-2 text-[#000]">
+    <nav class="navbar top-0 left-0 w-[100%] z-10 h-[10vh] flex justify-between items-center py-1 px-2 text-[#fff] fixed">
         <div class="navbar-logo w-2/12 ">
             <img class="w-[50%] mt-10" src="./images/1000-hills-logo.png" alt="Logo"> <!-- Replace with your logo -->
         </div>
-        <ul class="flex lg:space-x-4 font-thin w-8/12 list-1 uppercase gap-2  text-sm ">
-            <li class="list-2"><a href="#">Home</a></li>
-            <li class="list-2"><a href="#">About</a></li>
-            <li class="list-2"><a href="#">Community</a></li>
-            <li class="list-2"><a href="#">Results</a></li>
+        <ul class="flex lg:space-x-4 font-thin w-8/12 uppercase gap-2 text-sm ">
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="#">Home</a></li>
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="#">About</a></li>
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="#">Community</a></li>
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="#">Results</a></li>
         </ul>
         <div class="flex w-2/12 list-1">
             <ul class="flex lg:gap-6 gap-2 justify-center items-center text-md ">
-                <li><a href="https://www.facebook.com/1000hillsrugby/"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="https://www.instagram.com/1000hillsrugby/"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href=" https://x.com/1000HillsRugby?t=S0PTUa88AFrp6SJs5meJ6A&s=08 "><i
-                            class="fa-brands fa-x-twitter"></i></a></li>
-                <li><a href="https://www.youtube.com/@1000HillsRugby"><i class="fa-brands fa-youtube"></i></a></li>
+                <li class="list-2">
+                    <a class="hover:text-[#006838] hover:text-lg" href="https://www.facebook.com/1000hillsrugby/">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="list-2">
+                    <a class="hover:text-[#006838] hover:text-lg" href="https://www.instagram.com/1000hillsrugby/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="list-2">
+                    <a class="hover:text-[#006838] hover:text-lg" href=" https://x.com/1000HillsRugby?t=S0PTUa88AFrp6SJs5meJ6A&s=08 ">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </li>
+                <li class="list-2">
+                    <a class="hover:text-[#006838] hover:text-lg" href="https://www.youtube.com/@1000HillsRugby">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
             </ul>
+        </div>
+        <div>
+            <i class="icon-1 lg:hidden text-xl pr-3 fa-solid fa-bars"></i>
         </div>
     </nav>
 
     <main>
         <!-- Slideshow Container -->
-        <section class="slideshow-container h-[100vh]  max-w-full overflow-hidden grid grid-cols-12 items-center ">
-            <!-- Slide 1 -->
-         
-               <div class=" text-container border-l-[10px] flex flex-col gap-5 col-span-4 border-white-500 pl-2 w-[90%] mx-auto font-[700] text-white">
-                       <p class="text-[25px] text-[orange]">REPORT: RAMS 84- 85 EAGLES</p>
-                       <h1 class="text-[45px]">WIN FOR BEARS IN QUATER FINALS </h1>
-               </div>
-               <div class="col-span-8 pt-[8%]">
-                <img class="w-[100%]" src="./images/players.png" alt="">
-               </div>
+        <section class="slideshow-container bg-cover bg-no-repeat h-[100vh]  max-w-full grid grid-cols-12 items-center ">
+            <div class="text-container border-l-[10px] flex flex-col gap-2 col-span-9 border-white-500 pl-2 text-white">
+                <p class="text-[20px] font-thin">REPORT: RAMS 84- 85 EAGLES</p>
+                <h1 class="text-8xl font-[650]"> <span class="text-[#006838]">ONE POINT</span> <br> LEAD FOR <br> FINALE </h1>
+            </div>
+        </section>
 
+<<<<<<< HEAD
         </section>
             <!-- ........................Match date section ................... -->
             <section class="w-[90%] mx-auto text-center">
@@ -71,34 +85,120 @@
                                 <p class="text-4xl font-bold">112</p>
                             </div>
                         </div>
+=======
+        <!-- ........................Match date section ................... -->
+        <section class="w-[100%] mx-auto text-center border-b border-gray-300 pb-16">
+            <div class="flex lg:flex-row md:flex-col gap-6 -mt-16 mx-6">
+                <!-- First game result -->
+                <!-- Date section with black background and white text -->
+                <div class="flex items-center bg-white text-white rounded-lg justify-between w-full w-[45%] shadow-lg">
+                    <div class="text-center bg-black rounded-s-lg text-white py-4 px-2 w-1.5/12 h-32">
+                        <p class="text-lg font-semibold">30</p>
+                        <p class="text-md font-thin">OCT</p>
+>>>>>>> 6bae9e505336beb17a949be324147666914fd57b
                     </div>
-            
-                    <!-- Second game result -->
-                    <div class="flex items-center bg-white text-white rounded-lg justify-between w-full  w-[45%]">
-                        <!-- Date section with black background and white text -->
-                        <div class="text-center bg-black text-white p-4 w-1/4">
-                            <p class="text-5xl font-bold">30</p>
-                            <p class="text-2xl">Oct</p>
-                        </div>
-                        <!-- Match details with white background and no padding -->
-                        <div class="flex-1 flex justify-between items-center bg-white text-[#02120b] p-4">
-                            <div class="flex items-center m-0">
-                                <img class="w-14 mr-4" src="./images/1000-hills-logo.png" alt="Team 1 Logo">
+                    <!-- Match details with white background and no padding -->
+                    <div class="flex-1 flex justify-between items-center bg-white text-[#02120b] py-4 px-6 w-11/12">
+                        <div class="flex items-center m-0">
+                            <img class="w-14 mr-4" src="./images/1000-hills-logo.png" alt="Team 1 Logo">
+                            <div class="fle flex-col">
                                 <p class="text-4xl font-bold">112</p>
+                                <p>EAGLES</p>
                             </div>
-                            <p class="text-3xl font-semibold text-orange-600">Vs</p>
-                            <div class="flex items-center m-0">
-                                <img class="w-14 mr-4" src="./images/1000-hills-logo.png" alt="Team 2 Logo">
-                                <p class="text-4xl font-bold">112</p>
+                        </div>
+                        <p class="text-3xl font-semibold text-orange-600">Vs</p>
+                        <div class="flex items-center m-0">
+                            <img class="w-14 mr-4" src="./images/1000-hills-logo.png" alt="Team 2 Logo">
+                            <div class="fle flex-col">
+                                <p class="text-4xl font-bold">101</p>
+                                <p>RHINOS</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            
-            
-            
 
+                <!-- Second game result -->
+                <div class="flex items-center bg-white text-white rounded-lg justify-between w-full w-[45%] shadow-lg">
+                    <!-- Date section with black background and white text -->
+                    <div class="text-center bg-black rounded-s-lg text-white py-4 px-2 w-1.5/12 h-32">
+                        <p class="text-lg font-semibold">26</p>
+                        <p class="text-md font-thin">OCT</p>
+                    </div>
+                    <!-- Match details with white background and no padding -->
+                    <div class="flex-1 flex justify-between items-center bg-white text-[#02120b] py-4 px-6 w-11/12">
+                        <div class="flex items-center m-0">
+                            <img class="w-14 mr-4" src="./images/1000-hills-logo.png" alt="Team 1 Logo">
+                            <div class="fle flex-col">
+                                <p class="text-4xl font-bold">85</p>
+                                <p>EAGLES</p>
+                            </div>
+                        </div>
+                        <p class="text-3xl font-semibold text-orange-600">Vs</p>
+                        <div class="flex items-center m-0">
+                            <img class="w-14 mr-4" src="./images/1000-hills-logo.png" alt="Team 2 Logo">
+                            <div class="fle flex-col">
+                                <p class="text-4xl font-bold">84</p>
+                                <p>RHINOS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-11/12 px-4 flex flex-col m-auto">
+            <div class="flex py-16">
+                <div class="text-4xl font-semibold flex w-8/12 justify-start">
+                    LATEST NEWS
+                </div>
+                <div class="flex flex-row gap-4 w-4/12 justify-end">
+                    <a class="flex flex-row gap-4 w-4/12 justify-end"  href="#">
+                        <div>
+                            <i class="text-xl text-[#dcbb26] pt-1 fa-regular fa-newspaper"></i>
+                        </div>
+                        <div class=" flex items-center">ALL NEWS</div>
+                    </a>
+                </div>
+            </div>
+            <div class="flex gap-6 ">
+                <div class="flex flex-col gap-4 w-3/12">
+                    <div>
+                        <img class="rounded-xl h-[160px] w-[300px]" src="./images/image1.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <span class="font-medium text-md">30/September</span>
+                        <p class="font-semibold text-xl w-10/12">FREE THROWS KEY TO LATE GAME SUCCESS</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4 w-3/12">
+                    <div>
+                        <img class="rounded-xl h-[160px] w-[300px]" src="./images/image2.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <span class="font-medium text-md">29/September</span>
+                        <p class="font-semibold text-xl">ROSE RETURN TO TRAINING AFTER ELBOW INJURY</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4 w-3/12">
+                    <div>
+                        <img class="rounded-xl h-[160px] w-[300px]" src="./images/rugby-1.webp" alt="">
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <span class="font-medium text-md">26/September</span>
+                        <p class="font-semibold text-xl">PREPAIRING FOR RUGBY SEASON COACHING ADVICE</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4 w-3/12">
+                    <div>
+                        <img class="rounded-xl h-[160px] w-[300px]" src="./images/rugby-3.jpeg" alt="">
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <span class="font-medium text-md">22/September</span>
+                        <p class="font-semibold text-xl">DOES BASKETBALL BUILD CHARACTER</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section class="my-16 flex lg:flex-row flex-col border-t border-white p-12 w-[95%] mx-auto">
             <div class="image-2-div lg:w-6/12 m-auto w-11/12 lg:ml-8">
@@ -106,7 +206,7 @@
             </div>
             <div class="image-2-text flex flex-col lg:w-6/12 w-full lg:pl-6">
                 <div>
-                    <p class="color-yellow text-lg font-thin pb-6">Who We Are</p>
+                    <p class="text-[#dcbb26] text-lg font-thin pb-6">Who We Are</p>
                 </div>
                 <div>
                     <p class="text-white text-6xl font-bold pb-6">1000 <br> HILLS <br> RUGBY</p>
@@ -117,7 +217,7 @@
                         supportive community.</p>
                 </div>
                 <div>
-                    <button class="btn-1 px-6 py-3 mt-6">
+                    <button class="bg-[#dcbb26] px-6 py-3 mt-6">
                         <a class="text-white" href="#">Read More</a>
                     </button>
                 </div>
