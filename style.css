@@ -35,9 +35,6 @@ body {
 .text-container p {
     animation: moveInRight 2s forwards;
 }
-
-
-
 @keyframes fadeInText {
     from { opacity: 0; }
     to { opacity: 1; }
