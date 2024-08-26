@@ -9,40 +9,53 @@
     <title>About Us</title>
 </head>
 <body>
-    <nav class="navbar bg-[#fff] h-[10vh] absolute flex justify-between items-center py-1 px-2 text-[#000]">
+    <nav class="navbar top-0 left-0 w-[100%] z-10 h-[10vh] flex justify-between items-center py-1 px-2 text-[#fff] fixed">
         <div class="navbar-logo w-2/12 ">
-            <img class="w-[35%] mt-2" src="./images/1000-hills-logo.png" alt="Logo"> <!-- Replace with your logo -->
+            <img class="w-[50%] mt-10" src="./images/1000-hills-logo.png" alt="Logo"> <!-- Replace with your logo -->
         </div>
-        <ul class="flex lg:space-x-4 font-thin w-8/12 list-1 uppercase gap-2  text-sm ">
-            <li class="list-2"><a href="#">Home</a></li>
-            <li class="list-2"><a href="#">About</a></li>
-            <li class="list-2"><a href="#">Community</a></li>
-            <li class="list-2"><a href="#">Results</a></li>
+        <ul class="flex lg:space-x-4 font-thin w-8/12 uppercase gap-2 text-sm ">
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="#">Home</a></li>
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="#">About</a></li>
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="#">Community</a></li>
+            <li class="list-2"><a class="hover:text-[#006838] hover:text-lg" href="#">Results</a></li>
         </ul>
         <div class="flex w-2/12 list-1">
             <ul class="flex lg:gap-6 gap-2 justify-center items-center text-md ">
-                <li><a href="https://www.facebook.com/1000hillsrugby/"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="https://www.instagram.com/1000hillsrugby/"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href=" https://x.com/1000HillsRugby?t=S0PTUa88AFrp6SJs5meJ6A&s=08 "><i
-                            class="fa-brands fa-x-twitter"></i></a></li>
-                <li><a href="https://www.youtube.com/@1000HillsRugby"><i class="fa-brands fa-youtube"></i></a></li>
+                <li class="list-2">
+                    <a class="hover:text-[#006838] hover:text-lg" href="https://www.facebook.com/1000hillsrugby/">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="list-2">
+                    <a class="hover:text-[#006838] hover:text-lg" href="https://www.instagram.com/1000hillsrugby/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="list-2">
+                    <a class="hover:text-[#006838] hover:text-lg" href=" https://x.com/1000HillsRugby?t=S0PTUa88AFrp6SJs5meJ6A&s=08 ">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </li>
+                <li class="list-2">
+                    <a class="hover:text-[#006838] hover:text-lg" href="https://www.youtube.com/@1000HillsRugby">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
             </ul>
+        </div>
+        <div>
+            <i class="icon-1 lg:hidden text-xl pr-3 fa-solid fa-bars"></i>
         </div>
     </nav>
 
     <main>
-        <section class="slideshow-container h-[100vh]  max-w-full overflow-hidden grid grid-cols-12 items-center ">
-            <!-- Slide 1 -->
-         
-                <div class=" text-container-2 border-l-[10px] flex flex-col col-span-4 border-white-500 pl-2  mx-auto font-[800] text-white">
-                    <p class="text-[25px] text-[orange]">About Us</p>
-                    <h1 class="lg:text-[50px] lg:w-[100%]">One team <br> One spirit</h1>
-                </div>
-                <div class="col-span-8 pt-[8%]">
-                  <img class="w-[100%]" src="./images/players.png" alt="">
-                </div>
+        <section class="slideshow-container bg-cover bg-no-repeat h-[100vh]  max-w-full grid grid-cols-12 items-center ">
+            <div class="text-container border-l-[10px] flex flex-col gap-2 col-span-9 border-white-500 pl-2 text-white">
+                <p class="text-[20px] font-thin">REPORT: RAMS 84- 85 EAGLES</p>
+                <h1 class="text-8xl font-[650]"> <span class="text-[#006838]">ONE POINT</span> <br> LEAD FOR <br> FINALE </h1>
+            </div>
         </section>
-
+        
         <section class="bg-white justify-center items-center pb-9">
             <div class="flex-col flex justify-center items-center w-full pt-10">
                 <div class="about-us-logo lg:w-8/12 lg:mx-8 lg:-mt-2 w-full flex justify-center items-center">
@@ -60,14 +73,22 @@
         </section>
 
         <section class="about-us-section-3 bg-[#145A32]">
-            <div class="section-3-container gap-2 flex lg:flex-row flex-col justify-center items-center w-[90%] w-full py-10 px-5 rounded-md ">
-                <div class="section-3-container-content-1 lg:w-[40%] w-full bg-cover rounded-md flex items-end">
-                    <p class=" font-bold">History</p>
-                    <h2 class="">Dump Tackle since <br> 2014</h2>
-                </div>
-                <div class="section-3-container-content-2 lg:w-[40%] w-full bg-cover rounded-md"></div>
-                <div class="section-3-container-content-3 lg:w-[40%] w-full bg-cover rounded-md"></div>
-                <div class="section-3-container-content-4 lg:w-[40%] w-full bg-cover rounded-md"></div>
+            <div class="section-3-container gap-2 flex lg:flex-row flex-col justify-center items-center w-[90%] w-full py-10 px-5">
+                <a href="#">
+                    <img class="rounded-md" src="./images/download-4.jpg" alt="">
+                </a>
+                
+                <a href="#">
+                    <img class="rounded-md" src="./images/42d17dca-c32a-493d-a269-bd5efdb4d739.jfif" alt="">
+                </a>
+                
+                <a href="#">
+                    <img class="rounded-md" src="./images/45f6edcd-5032-417e-b61a-d6a3bc556c35-2.jpg" alt="">
+                </a>
+                
+                <a href="#">
+                    <img class="rounded-md" src="./images/team-8.jpg" alt="">
+                </a>
             </div>
         </section>
     </main>
